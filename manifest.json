@@ -1,0 +1,14 @@
+{
+ 	"name": "My First Extension",
+ 	"version": "1.0",
+	"description": "The first extension that I made.",
+  	"permissions": [
+    	"https://twitter.com/*"
+    ],
+    "content_scripts": [
+		{
+			"matches": ["https://twitter.com/*"],
+			"js": ["jquery-1.7.1.min.js", "twitter.js"]
+		}
+	]
+}
